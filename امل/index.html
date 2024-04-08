@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Select Example</title>
+</head>
+<body>
+
+  <label for="cars">Moon</label>
+  <select id="cars" name="cars">
+    <option value="mo144px.jpeg">144p</option>
+    <option value="mo400px.png">480p</option>
+    <option value="mo720px.png">720p</option>
+    <option value="mo1080.jpg">1080p</option>
+  </select>
+ <img src="mo144px.jpeg" alt="" id="moon">
+ <h1 id="amallove">يا امل شكد احبك وصداقتنا احلى صداقه اسف لان اتاخر رد عليج بس تعبت شوي وهذا قليل بحقك لو بيدي اكثر من هيج تستاهلينها عتبريها هديه العيد مقدما</h1>
+ 
+  <script>
+  var car= document.getElementById("cars")
+    document.getElementById('cars').addEventListener('change', function() {
+      var moon = this.value;
+        document.getElementById('moon').src=moon
+        if (car.value=="mo1080.jpg"){
+            document.getElementById('amallove').style.display="block"
+        }
+        else
+        {
+            document.getElementById('amallove').style.display="none"
+        }
+  
+    });
+  </script>
+<style>
+    select{
+        width: 100px;
+        height:30px;
+        position:absolute;
+        top:50%;
+        left:50%;
+    }
+    label{
+        position:absolute;
+        left:45%;
+        top:51%;
+    }
+    body{background-color: white;}
+img{
+    width:200px;
+    height:200px;
+    border-radius:100%;
+    top:60%;
+    left:44%;
+    position: absolute;
+
+}
+h1{
+    font-size:20px;
+    display:none;
+}
+</style>
+</body>
+</html>
