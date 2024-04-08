@@ -7,13 +7,15 @@
 </head>
 <body>
 
-  <label for="cars">Moon :</label>
+  
   <select id="cars" name="cars">
     <option value="mo144px.jpeg">144p</option>
     <option value="mo400px.png">480p</option>
     <option value="mo720px.png">720p</option>
     <option value="mo1080.jpg">1080p</option>
+
   </select>
+  <audio src="mo.mp3" id="mooo"></audio>
  <img src="mo144px.jpeg" alt="" id="moon">
  <h1 id="amallove">يا امل شكد احبك وصداقتنا احلى صداقه اسف لان اتاخر رد عليج بس تعبت شوي وهذا قليل بحقك لو بيدي اكثر من هيج تستاهلينها عتبريها هديه العيد مقدما</h1>
  
@@ -24,10 +26,12 @@
         document.getElementById('moon').src=moon
         if (car.value=="mo1080.jpg"){
             document.getElementById('amallove').style.display="block"
+            document.getElementById("mooo").play()
         }
         else
         {
             document.getElementById('amallove').style.display="none"
+            document.getElementById("mooo").pause()
         }
   
     });
@@ -37,21 +41,23 @@
         width: 100px;
         height:30px;
         position:absolute;
-        top:35%;
-        left:50%;
+        top:63%;
+        left:45%;
+        background:white;
     }
     label{
         position:absolute;
-        left:34%;
-        top:36%;
+        left:35%;
+        top:51%;
+        background:white;
     }
-    body{background-color: white;}
+    body{background-color: rgb(0, 0, 0);}
 img{
     width:200px;
     height:200px;
     border-radius:100%;
-    top:50%;
-    left:37%;
+    top:30%;
+    left:30%;
     position: absolute;
 
 }
