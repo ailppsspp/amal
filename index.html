@@ -21,7 +21,10 @@
  
   <script>
   var car= document.getElementById("cars")
-  document.getElementById("mooo").play()
+  function pop(){
+    document.getElementById("mooo").play()
+  }
+    pop()
     document.getElementById('cars').addEventListener('change', function() {
       
       var moon = this.value;
