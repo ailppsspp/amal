@@ -21,17 +21,18 @@
  
   <script>
   var car= document.getElementById("cars")
+     document.getElementById("mooo").play()
     document.getElementById('cars').addEventListener('change', function() {
       var moon = this.value;
         document.getElementById('moon').src=moon
         if (car.value=="mo1080.jpg"){
             document.getElementById('amallove').style.display="block"
-            document.getElementById("mooo").play()
+           
         }
         else
         {
             document.getElementById('amallove').style.display="none"
-            document.getElementById("mooo").pause()
+            
         }
   
     });
