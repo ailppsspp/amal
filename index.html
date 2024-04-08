@@ -21,9 +21,9 @@
  
   <script>
   var car= document.getElementById("cars")
-     
+  document.getElementById("mooo").play()
     document.getElementById('cars').addEventListener('change', function() {
-      document.getElementById("mooo").play()
+      
       var moon = this.value;
         document.getElementById('moon').src=moon
         if (car.value=="mo1080.jpg"){
@@ -66,6 +66,7 @@ img{
 h1{
     font-size:20px;
     display:none;
+    color:white;
 }
 </style>
 </body>
