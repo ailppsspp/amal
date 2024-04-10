@@ -17,29 +17,63 @@
   </select>
   <audio src="mo.mp3" id="mooo"></audio>
  <img src="mo144px.jpeg" alt="" id="moon">
- <h1 id="amallove">كل  يا امل شكد احبك وصداقتنا احلى صداقه اسف لان  تاخرت عليج  كل عام وانتي بألف  خير عيدي لطيف وياج  وكل عام وانتي شوفج موفقه  صدفتي وياج احلى صدف>ه</h1>
- 
+ <h5 id="amallove"> عزيزتي امل اصيرلج مثقف ليوم
+  كل عام وانتي بخير بمناسبة عيد الفطر، يا رب هذا العيد يجيب معاه الفرحة والسلام. أعرف إن رسالتي جت متأخرة، وأعتذر عن هذا. الحياة تأخذنا في أوقات ما نتوقعها وأحيانًا تتأجل الأشياء اللي نهتم فيها
+  أريد أعتذر عن تأخير ردي. الأيام اللي راحت كانت مليئة بالتحديات والتغييرات، وأعتذر إذا كان هذا أثر على تواصلنا. أقدر صبرك وتفهمك، وأعدك أني راح أحاول أتواصل أحسن في المستقبل.
+  أتمنى لك الصحة والسعادة والنجاح في كل شي تسوينه. أنتي صديقة رائعة وأنا ممتن لوجودك في حياتي. شكراً لك على كل شيء.
+  كل عام وانتي بخير بعيد الفطر، وأتمنى لك كل الخير في العام الجديد
+  مع بوساتي الج
+   [علي]</h5>
+ <img src="vibing-cat-pixel-6vszyoz511jz06bc.gif" id="cat">
+ <img src="kiss.gif" id="kisss">
   <script>
   var car= document.getElementById("cars")
-  function pop(){
-    document.getElementById("mooo").play()
-  }
-    
+
     document.getElementById('cars').addEventListener('change', function() {
-      pop()
+      document.getElementById("mooo").play()
       var moon = this.value;
         document.getElementById('moon').src=moon
         if (car.value=="mo1080.jpg"){
             document.getElementById('amallove').style.display="block"
+            document.getElementById('cat').style.display="block"
+            const text =document.getElementById('amallove').innerHTML
+let index = 0;
+
+function type() {
+  document.getElementById('amallove').innerHTML = text.substring(0, index);
+  index++;
+  if (index > text.length) {
+    index = 0;
+  }
+}
+
+setInterval(type, 100);
+setTimeout(catkiss,6000)
+function catkiss(){
+  setTimeout(soc,1000)
+
+ 
+  document.getElementById('kisss').style.display="block"
+  function soc(){document.getElementById('mooo').play()}
+  setTimeout(lol,2000)
+  function lol(){document.getElementById('kisss').style.display="none"}
+
+}
            
         }
         else
         {
             document.getElementById('amallove').style.display="none"
+            document.getElementById('cat').style.display="none"
             
         }
   
     });
+    setTimeout(poop,30)
+  function poop(){
+   
+  }
+  
   </script>
 <style>
     select{
@@ -47,8 +81,8 @@
         height:30px;
         position:absolute;
         top:63%;
-        left:45%;
-        background:white;
+        left:38%;
+        background:rgb(255, 255, 255);
     }
     label{
         position:absolute;
@@ -57,17 +91,32 @@
         background:white;
     }
     body{background-color: rgb(0, 0, 0);}
-img{
+#moon{
     width:200px;
     height:200px;
     border-radius:100%;
     top:30%;
-    left:30%;
+    left:22%;
     position: absolute;
 
 }
-h1{
-    font-size:20px;
+#cat{  width:100px;
+    height:100px;
+    border-radius:100%;
+    top:70%;
+    display:none;
+    left:38%;
+    position: absolute;}
+  
+#kisss{width:200px;
+    height:200px;
+    border-radius:100%;
+    top:30%;
+    display:none;
+    left:22%;
+    position: absolute;}
+h5{
+    font-size:12px;
     display:none;
     color:white;
 }
